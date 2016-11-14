@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Biometrics - Mitigation</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="intro.html">Introduction</a>
+                </li>
+                <li>
+                    <a href="history.html">History of Biometrics</a>
+                </li>
+                <li>
+                    <a href="arch.html">Architecture</a>
+                </li>
+                <li>
+                    <a href="encrypt.html">Encryption</a>
+                </li>
+                <li>
+                    <a href="spoof.html">Spoofing</a>
+                </li>
+                <li>
+                    <a href="mitigation.html">Mitigation</a>
+                </li>
+                <li>
+                    <a href="implications.html">Implications</a>
+                </li>
+                <li>
+                    <a href="citations.html">References and Futher Readings</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Mitigation</h1>
+                        <p> This may seem unsafe, but there are many mitigations to make hacking into something despite a finger print scanner more difficult. <br> <br>
+                        For the first point of attack there are many different mitigations. One simple step the user can take is just using an uncommon finger. Not many people try to lift fingerprints that aren’t the thumb or index finger, so using one like the ring finger would be less likely to be spoofed. When it comes to the scanner itself most of the mitigations are liveliness tests. Some examples are using checking perspiration (over time), spectroscopy, finger conductivity, temperature, pressure, or fingerprint pulse. Though these don’t work well against cadavers, they work fairly well against many other types of spoofing. <br> <br>
+                        Encryption of data and communication can also prevent attacks. Remote attacks on points 4 and 8 are easily mitigated by encrypting the data. <br> <br>
+                        As mentioned before, it is difficult to attack at point 4 if the extraction process is inseparable from the matcher and is only made easier by a remote matcher. This is best mitigated by having a local matcher and inseparable extraction and matching processes. <br> <br>
+                        Points 5, 6, and 7 can be mitigated by placing the matcher and the database in a secure location. <br> <br>
+                        In the end, though, finger prints aren’t truly private for many people as the government registers finger prints of not just criminals, but also for workers in the public sector. One of the best ways to mitigate hacking of biometrics is to not just rely on biometrics but to have a two (or more) step authentication system that relies on something other than biometrics as well, such as a password.
+                        </p>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Hide Menu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>

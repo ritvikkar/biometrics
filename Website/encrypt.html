@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Biometrics - Encryption</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="intro.html">Introduction</a>
+                </li>
+                <li>
+                    <a href="history.html">History of Biometrics</a>
+                </li>
+                <li>
+                    <a href="arch.html">Architecture</a>
+                </li>
+                <li>
+                    <a href="encrypt.html">Encryption</a>
+                </li>
+                <li>
+                    <a href="spoof.html">Spoofing</a>
+                </li>
+                <li>
+                    <a href="mitigation.html">Mitigation</a>
+                </li>
+                <li>
+                    <a href="implications.html">Implications</a>
+                </li>
+                <li>
+                    <a href="citations.html">References and Futher Readings</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Encryption</h1>
+                        <p>As data becomes critical to our lives, it is important to protect it and encrypt it. Our fingerprints might have been collected by a company for identification and those prints aren’t all that hard to acquire. This may allow government or commercial entities to access this biometric data and run it for their own databases without our consent. This is why biometric data is never collected directly but is encrypted. <br> <br>
+                        Instead of actually storing fingerprints, some biometric systems store hash equivalents in their system. The algorithm generates small but unique sets of numbers from the biometric data file, therefore two sets of fingerprints will not give us the same hash digest. Additionally not all the fingerprint data is actually hashed. There are only specific unique parts of the finger print required to recognize you. Storing an image of a fingerprint is an extremely uncommon and unsafe practice therefore the hash of the binary code of the fingerprint is the general standard for storing a secure fingerprint. <br> <br>
+                        Since fingerprint passwords have hit the public domain their have been multiple companies working on securing their data and making fingerprints the new passwords. The two leading technologies in this field would be Apple’s Touch ID and Samsung’s Finger Print Scanner. <br> <br>
+                        Touch ID stores mathematical representations of our fingerprints and compares it to the saved data. A special feature about the finger print data is that Touch ID adds new sections onto the existing data for accuracy as time goes on. Touch ID does not store any actual images of the fingerprint. The data is encrypted and protected by Apple’s Secure Enclave which function from within the phone, never sharing the information with third parties. <br> <br>
+                        Samsung uses similar security standards but saves partial pattern of the finger print, enough to recognize the unique print on the device. The information to compare entered fingerprints to stored ones is stored on the device and is encrypted using a secret key, unique to each device.</p>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Hide Menu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>

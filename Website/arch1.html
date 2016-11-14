@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Biometrics - Architecture | Types of Scanners</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="intro.html">Introduction</a>
+                </li>
+                <li>
+                    <a href="history.html">History of Biometrics</a>
+                </li>
+                <li>
+                    <a href="arch.html">Architecture</a>
+                    <ul> 
+                        <a href="arch1.html">Types of Scanners</a> 
+                        <a href="arch2.html">Storage</a> 
+                    </ul> 
+                </li>
+                <li>
+                    <a href="encrypt.html">Encryption</a>
+                </li>
+                <li>
+                    <a href="spoof.html">Spoofing</a>
+                </li>
+                <li>
+                    <a href="mitigation.html">Mitigation</a>
+                </li>
+                <li>
+                    <a href="implications.html">Implications</a>
+                </li>
+                <li>
+                    <a href="citations.html">References and Futher Readings</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Architecture - Types of Scanners</h1>
+                        <p><b>Optical Scanners:</b><br>
+                        Optical fingerprint scanners are the oldest method to compute fingerprints. This method relies on capturing an image of the fingerprint and then analyzing it. The algorithms that are used for this purpose usually detect unique patterns like ridges, by analyzing the light and dark parts of the image. This form of a fingerprint scanner is essentially a specialized camera.  Optical scanners, however, are easy to fool since they rely primarily on using a 2D image of a fingerprint for making comparisons.<br><br>
+
+                        <b>Capacitance scanners:</b><br>
+                        Capacitance scanners are the most commonly used fingerprint scanner. Capacitance scanners utilize the principles associated with capacitance. Unlike the optical scanners, these scanners do not rely on capturing a traditional image of the fingerprint. The scanners use an array of capacitor circuits to store the changes in electrical charge when a fingerprint is introduced into the air gap between two capacitor plates. The original charge that is stored between the two plates of a capacitor with be changed slightly when a finger’s ridge is placed over the plates, whereas the areas with an air gap will remain unchanged.  An op-amp integrator can be used to track these changes, which can be recorded by an analogue-to-digital converter.<br><br>
+                        <img src="sensing_capacitive_direct.gif" alt="Architecture" style="width:362px;height:224px;">  <br> <br>
+                        <b>Ultrasonic scanners:</b><br>
+                        Ultrasonic scanners are a relatively recent development in the domain of fingerprint scanners. They are built on hardware that consist of an ultrasonic transmitter and receiver. When a fingerprint is placed on the scanner, an ultrasonic pulse is transmitted against the finger. Some of this pulse is absorbed, whereas the rest of it is reflected back to the sensor depending on where the ridges and other details of the fingerprint are present. This helps in capturing the details unique to a particular fingerprint. This scanner also has the capacity to produce a 3D visualization of the fingerprint, provided it is scanned for the required period of time. This feature confers an additional security advantage, since it makes it harder to spoof a fingerprint.<br><br>
+                        </p>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Hide Menu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>
